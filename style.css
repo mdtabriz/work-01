@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Merienda:wght@400;700&family=Merriweather+Sans:wght@300;400&display=swap');
+
+:root{
+    --main-color: #e67e22;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.nav {
+    height: 8vh;
+    width: 100vw;
+    background-color: #000d0d;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: #f1f1f1;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 8vh;
+    line-height: 8vh;
+    color: var(--main-color);
+    font-family: 'Hachi Maru Pop', cursive;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    padding: 10px;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url('img/photo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+    color: #f1f1f1;
+    font-weight: 300px;
+    letter-spacing: 10px;
+}
+
+.heading p {
+    margin-top: 30px;
+    color: #f1f1f1;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.heading {
+    position: relative;
+}
+
+.heading::before {
+    content: "";
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 1px;
+    width: 800px;
+    background-color: var(--main-color); 
+}
+
+.heading::after {
+    content: "";
+    bottom: -40px;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    width: 600px;
+    background-color: var(--main-color); 
+}
+
+.myself {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    margin: 0 ;
+}
+
+.myself-heading h1{
+    color: #f1f1f1;
+    text-align: center; 
+    margin-top: 70px;
+    font-family: 'Merienda', cursive;
+    letter-spacing: 5px;
+    font-size: 40px;
+    position: relative;
+}
+
+.myself-heading h1::before {
+    content: "";
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    background-color: var(--main-color); 
+}
+
+.myself-para p {
+    color: #bdc3c7;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    width: 1000px;
+    line-height: 25px;
+}
+
+.myself-button p{
+    width: 150px;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    margin: 50px auto;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.myself-button p:hover {
+    background-color: #bdc3c7;
+    color: #34495e;
+    border: 1px solid #34495e;
+}
+
+.my-gellery {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url('img/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 0;
+    padding: 0;
+}
+
+.catalog {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url('img/01.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    border: 1px solid #FFF;
+}
+
+.sweet {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url('img/02.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    align-items: center;
+    border: 1px solid #FFF;
+}
+
+.cruise {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)) ,url('img/03.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    align-items: center;
+    border: 1px solid #FFF;
+}
+
+.wedding {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('img/04.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    align-items: center;
+    border: 1px solid #FFF;
+
+}
+
+.aiict {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('img/05.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    align-items: center;
+    border: 1px solid #FFF;
+
+}
+
+.meh {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url('img/06.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #f1f1f1;
+    align-items: center;
+    border: 1px solid #FFF;
+
+}
+
+.border {
+    color: #ecf0f1;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 30px;
+    position: relative;
+}
+
+
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(36, 37, 42, 1), rgba(36, 37, 42, 1)) , #000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-heading {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin: 50px auto;
+    position: relative;
+    transform: capitalize;
+    color: #fff;
+    font-family: 'Merienda', cursive;
+}
+
+.contact-heading::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 150px;
+    background-color: var(--main-color);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+}
+
+input, 
+#msg {
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    outline: none;
+    background-color: rgb(36, 37, 42);
+    border: none;
+    border-bottom: 1px solid var(--main-color);
+}
+
+input::placeholder,
+#msg::placeholder {
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+}
+
+.btn {
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #000;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 30px;
+    letter-spacing: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background: none;
+}
+
+.bottom-container {
+	background-color: #000;
+	text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+a {
+	padding-left: 10px;
+}
+.bottom-container a {
+	color:  #faf3dd;
+	text-decoration: none;
+}
+p {
+    padding: 10px;
+    color: white;
+}
+p .me {
+	color: yellow;
+	font-weight: bold;
+	transition: 0.4s;
+	padding-left: 3px !important;
+}
+.me:hover {
+	color: red;
+}
